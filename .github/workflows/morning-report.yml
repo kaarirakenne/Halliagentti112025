@@ -11,7 +11,7 @@ jobs:
 
     env:
       NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-      SEARCH_QUERY: "(akkuvarasto OR akkuenergia OR energiavarasto OR BESS) AND (Suomi OR Finland)"
+      SEARCH_QUERY: "(akkuvarasto OR BESS OR energiavarasto OR varastohalli OR varastointi OR teollisuusvarasto OR hiekkavarasto OR hiekkahalli OR suolahalli OR irtomateriaalivarasto)"
 
     steps:
       - name: Checkout repository
@@ -33,4 +33,3 @@ jobs:
         with:
           name: aamuraportti
           path: aamuraportti.txt
-
