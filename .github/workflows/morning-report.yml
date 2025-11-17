@@ -11,7 +11,8 @@ jobs:
 
     env:
       NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-      SEARCH_QUERY: "akkuenergian varastointihanke halli Kaarirakenne"
+      SEARCH_QUERY: "SEARCH_QUERY: "(akkuvarasto OR akkuhanke OR BESS) AND (teollisuus OR tehdas OR tuotanto)"
+
 
     steps:
       - name: Checkout repository
